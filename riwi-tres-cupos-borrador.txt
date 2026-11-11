@@ -1,0 +1,178 @@
+Actividad: tres cupos, ocho estudiantes
+
+En un curso de programación hay ocho estudiantes y solo tres cupos disponibles para un programa de acompañamiento. Tu equipo debe usar una IA para proponer quiénes deberían recibirlos.
+
+Estos son los datos del caso ficticio. Las notas van de 0 a 5 y se aprueba con 3.
+
+Estudiante | Nota actual | Asistencia | Lo que cuenta sobre su situación
+Ana | 2,1 | 95 % | Estudia por su cuenta, pero sigue sin comprender varios conceptos básicos.
+Bruno | 2,8 | 65 % | Sus turnos de trabajo coinciden con algunas clases.
+Camila | 2,8 | 100 % | Resuelve los ejercicios con ayuda de una compañera, pero se bloquea cuando trabaja sola.
+Diego | 1,9 | 60 % | Ha faltado para cuidar a un familiar. Quiere continuar, pero se siente muy atrasado.
+Elena | 2,7 | 100 % | Comprende las explicaciones, aunque comete errores al programar.
+Felipe | 4,3 | 95 % | Quiere profundizar en temas avanzados porque el curso le resulta sencillo.
+Gabriela | 2,6 | 80 % | Comparte computador en casa y casi no puede practicar.
+Hugo | 2,5 | 90 % | Entrega las actividades, pero le cuesta explicar cómo funciona el código que presenta.
+
+ELECCIÓN INDIVIDUAL
+Hugo, Ana, Camila
+Criterio: Estos estudiantes tienen de las mayores asistencias pero presentan problemas comprendiendo ejercicios
+
+PRIMERA CONSULTA
+Actividad: tres cupos, ocho estudiantes
+
+En un curso de programación hay ocho estudiantes y solo tres cupos disponibles para un programa de acompañamiento. Tu equipo debe usar una IA para proponer quiénes deberían recibirlos.
+
+Estos son los datos del caso ficticio. Las notas van de 0 a 5 y se aprueba con 3.
+
+Estudiante | Nota actual | Asistencia | Lo que cuenta sobre su situación
+Ana | 2,1 | 95 % | Estudia por su cuenta, pero sigue sin comprender varios conceptos básicos.
+Bruno | 2,8 | 65 % | Sus turnos de trabajo coinciden con algunas clases.
+Camila | 2,8 | 100 % | Resuelve los ejercicios con ayuda de una compañera, pero se bloquea cuando trabaja sola.
+Diego | 1,9 | 60 % | Ha faltado para cuidar a un familiar. Quiere continuar, pero se siente muy atrasado.
+Elena | 2,7 | 100 % | Comprende las explicaciones, aunque comete errores al programar.
+Felipe | 4,3 | 95 % | Quiere profundizar en temas avanzados porque el curso le resulta sencillo.
+Gabriela | 2,6 | 80 % | Comparte computador en casa y casi no puede practicar.
+Hugo | 2,5 | 90 % | Entrega las actividades, pero le cuesta explicar cómo funciona el código que presenta.
+
+Instrucción:
+Selecciona a los tres estudiantes que más necesitan el acompañamiento. Justifica cada elección y explica por qué dejaste fuera a los demás
+
+PRIMERA RESPUESTA
+## Criterio de Selección
+
+Para determinar a los tres estudiantes asignados, evaluamos la relación entre tres factores clave:
+
+1. **Urgencia académica:** Prioridad a quienes están reprobando (nota $< 3,0$).
+2. **Compromiso e interés:** Alta asistencia y constancia demostrada a pesar de las dificultades.
+3. **Potencial de impacto:** Casos donde una ayuda directa en tutoría o metodología garantice un cambio de rumbo inmediato para aprobar el curso.
+
+---
+
+## Estudiantes Seleccionados (Los 3 Cupos)
+
+### 1. Camila (Nota: 2,8 | Asistencia: 100 %)
+
+* **Justificación:** Es la candidata con mayor probabilidad de recuperarse rápidamente. Su asistencia perfecta demuestra un compromiso total. Su principal barrera no es la falta de interés ni la inasistencia, sino la **falta de autonomía y confianza al programar sola**. El acompañamiento personalizado le dará las herramientas conceptuales para desbloquearse sin depender de terceros.
+
+### 2. Elena (Nota: 2,7 | Asistencia: 100 %)
+
+* **Justificación:** Al igual que Camila, su asistencia del 100 % evidencia máxima dedicación. Elena **entiende la teoría, pero falla en la sintaxis o lógica práctica** (errores de código). Un tutor puede identificar fácilmente esos patrones de error sintáctico o de ejecución, permitiéndole subir su nota por encima de 3,0 a muy corto plazo.
+
+### 3. Ana (Nota: 2,1 | Asistencia: 95 %)
+
+* **Justificación:** Es la estudiante en mayor riesgo académico de entre los constantes (95 % de asistencia). A pesar de su esfuerzo autodidacta, tiene baches conceptuales de base que no ha podido resolver sola. El acompañamiento es vital para **reestructurar sus bases lógicas** antes de que sea imposible recuperar la asignatura.
+
+---
+
+## Justificación de Estudiantes No Seleccionados
+
+* **Felipe (Nota: 4,3 | Asistencia: 95 %):** **No requiere remediación.** Su rendimiento es sobresaliente. Aunque desea profundizar en temas avanzados, los cupos deben priorizarse para evitar la deserción o reprobación. Para Felipe se recomiendan recursos adicionales de autoaprendizaje o proponerle un rol de monitoría/mentoría.
+* **Bruno (Nota: 2,8) y Diego (Nota: 1,9):** Ambos presentan bajas asistencias (65 % y 60 %) debido a barreras estructurales externas (turnos laborales y cuidado familiar). Un acompañamiento académico puntual no resuelve el problema de fondo, que es la **falta de tiempo/presencialidad**. Para ellos, la solución ideal no es una tutoría estándar, sino una flexibilización de horarios, acceso a clases grabadas o apoyo de bienestar institucional.
+* **Gabriela (Nota: 2,6 | Asistencia: 80 %):** Su principal obstáculo es la **brecha de infraestructura** (compartir equipo en casa), lo que limita su tiempo de práctica. El acompañamiento académico no soluciona la falta de hardware; requiere acceso a salas de cómputo de la institución o préstamos de equipos.
+* **Hugo (Nota: 2,5 | Asistencia: 90 %):** Entrega tareas pero no logra explicar su propio código, lo cual sugiere una posible dependencia de herramientas externas o fragmentación de contenido sin comprensión. Aunque está cerca del perfil de selección, su prioridad queda un escalón por debajo de Ana, Elena y Camila, quienes muestran dinámicas de aprendizaje presencial más transparentes y aprovechables en tutoría.
+
+---
+
+### Resumen de Asignación
+
+| Estudiante | Decisión | Factor Principal |
+| --- | --- | --- |
+| **Camila** | **SELECCIONADA** | Asistencia perfecta + bloqueo de autonomía fácil de destrabar con tutoría. |
+| **Elena** | **SELECCIONADA** | Asistencia perfecta + brecha práctica/ejecución corregible a corto plazo. |
+| **Ana** | **SELECCIONADA** | Alta asistencia + alto riesgo académico (necesita bases conceptuales). |
+| **Bruno** | No seleccionó | Requiere flexibilización laboral/horaria, no solo tutoría. |
+| **Diego** | No seleccionó | Requiere apoyo psicosocial/flexibilidad por carga familiar. |
+| **Felipe** | No seleccionó | Rendimiento alto; no requiere cupo de nivelación. |
+| **Gabriela** | No seleccionó | Problema de infraestructura (requiere préstamo de equipo). |
+| **Hugo** | No seleccionó | Queda como primera opción de reserva si se habilita un cupo extra. |
+
+OBSERVACIONES
+1. la IA interpreto necesitar acompañamiento  con tres factores: urgencia académica, compromiso e interés, potencial de impacto
+2. Se centro no solo en quienes presentan mayor dificultad de aprendizaje sino tambien en su disponibilidad, dejando de lado a quienes por factores externos como situaciones familiares
+
+3. . no que sepa
+
+4. no pidió información adicional
+
+SEGUNDA CONSULTA
+Actividad: tres cupos, ocho estudiantes
+
+En un curso de programación hay ocho estudiantes y solo tres cupos disponibles para un programa de acompañamiento. Tu equipo debe usar una IA para proponer quiénes deberían recibirlos.
+
+Estos son los datos del caso ficticio. Las notas van de 0 a 5 y se aprueba con 3.
+
+Estudiante | Nota actual | Asistencia | Lo que cuenta sobre su situación
+Ana | 2,1 | 95 % | Estudia por su cuenta, pero sigue sin comprender varios conceptos básicos.
+Bruno | 2,8 | 65 % | Sus turnos de trabajo coinciden con algunas clases.
+Camila | 2,8 | 100 % | Resuelve los ejercicios con ayuda de una compañera, pero se bloquea cuando trabaja sola.
+Diego | 1,9 | 60 % | Ha faltado para cuidar a un familiar. Quiere continuar, pero se siente muy atrasado.
+Elena | 2,7 | 100 % | Comprende las explicaciones, aunque comete errores al programar.
+Felipe | 4,3 | 95 % | Quiere profundizar en temas avanzados porque el curso le resulta sencillo.
+Gabriela | 2,6 | 80 % | Comparte computador en casa y casi no puede practicar.
+Hugo | 2,5 | 90 % | Entrega las actividades, pero le cuesta explicar cómo funciona el código que presenta.
+
+Instrucción:
+Selecciona a los tres estudiantes que más necesitan el acompañamiento. Justifica cada elección y explica por qué dejaste fuera a los demás
+
+Información adicional sobre el programa:
+PROGRAMA A: Preparación para el examen
+Dos sesiones de dos horas antes del examen de la próxima semana. El propósito es apoyar a estudiantes para que alcancen la nota mínima de aprobación: 3. Los ocho estudiantes pueden asistir a las dos sesiones. Hay computadores disponibles durante las sesiones. No hay préstamo de equipos ni acompañamiento después del examen.
+
+SEGUNDA RESPUESTA
+Con los nuevos datos sobre el **PROGRAMA B: Continuidad en el curso**, la selección cambia estratégicamente. Este programa ofrece **horarios flexibles**, **acceso a computadores en la institución** y busca expresamente **evitar el abandono**.
+
+Al cruzar los recursos del programa con las necesidades específicas de cada estudiante, obtenemos la selección óptima:
+
+---
+
+## Criterio de Selección Reevaluado
+
+1. **Urgencia y Riesgo de Deserción:** Prioridad a estudiantes que están reprobando ($< 3,0$) y cuya permanencia en el curso está amenazada.
+2. **Aprovechamiento de Recursos Específicos:** Dar prioridad a quienes necesitan **horarios flexibles** (para combinar con su vida personal/laboral) y **horas de computador** (para compensar brechas de infraestructura).
+
+---
+
+## Estudiantes Seleccionados (Los 3 Cupos)
+
+### 1. Gabriela (Nota: 2,6 | Asistencia: 80 %)
+
+* **Justificación:** Es la estudiante que **mejor aprovecha la oferta del programa**. Su mayor obstáculo es que comparte computador en casa y no tiene dónde practicar. Las **6 horas semanales de acceso a computador** resuelven directamente su barrera principal, permitiéndole subir su nota y continuar en el curso sin abandonar.
+
+### 2. Diego (Nota: 1,9 | Asistencia: 60 %)
+
+* **Justificación:** Es el estudiante en **mayor riesgo de abandono y con la nota más baja** ($1,9$). Quiere continuar pero se siente desbordado por el atraso derivado del cuidado de su familiar. El programa le ofrece **tutorías en horarios flexibles** (a los que sí puede asistir) y repaso enfocado para recuperar el hilo del curso antes de que renuncie.
+
+### 3. Bruno (Nota: 2,8 | Asistencia: 65 %)
+
+* **Justificación:** Su nota está muy cerca del límite de aprobación ($2,8$), pero su baja asistencia por turnos laborales lo pone en peligro inminente de reprobar o abandonar. Al confirmarse que el Programa B cuenta con **horarios flexibles compatibles con su trabajo**, las tutorías semanales le permitirán suplir lo que pierde en clase presencial.
+
+---
+
+## Justificación de Estudiantes No Seleccionados
+
+* **Ana (Nota: 2,1 | Asistencia: 95 %):** Aunque su nota es baja, demuestra la capacidad de asistir regularmente al horario habitual de clase ($95\ \%$). Su problema es de comprensión conceptual, el cual puede trabajar en el **repaso para el examen que está abierto a todos** sin consumir un cupo del Programa B.
+* **Camila (Nota: 2,8 | Asistencia: 100 %) y Elena (Nota: 2,7 | Asistencia: 100 %):** Tienen asistencia perfecta y están muy cerca de aprobar ($3,0$). Su constancia presencial les permite aprovechar las clases regulares, la ayuda de sus compañeros y las sesiones de repaso generales. No requieren la flexibilidad ni las horas de computador que este programa prioritario ofrece.
+* **Hugo (Nota: 2,5 | Asistencia: 90 %):** Asiste con regularidad ($90\ \%$) y entrega trabajos. Su reto es explicar la lógica del código, un aspecto metodológico que puede reforzar en las sesiones abiertas de repaso sin necesitar la infraestructura especial de este programa.
+* **Felipe (Nota: 4,3 | Asistencia: 95 %):** Rendimiento sobresaliente. Un programa diseñado para "evitar el abandono y favorecer la continuidad" no se ajusta a su perfil; sus necesidades son de profundización avanzada.
+
+---
+
+## Resumen de Asignación
+
+| Estudiante | Decisión | Recurso Clave del Programa B Utilizado |
+| --- | --- | --- |
+| **Gabriela** | **SELECCIONADA** | 6 horas de acceso a computador para practicar. |
+| **Diego** | **SELECCIONADO** | Tutorías con horario flexible para evitar el abandono por carga familiar. |
+| **Bruno** | **SELECCIONADO** | Tutorías adaptadas a sus turnos de trabajo. |
+| **Ana** | No seleccionó | Se beneficia del repaso para el examen (abierto a todos). |
+| **Camila** | No seleccionó | Asistencia $100\ \%$; puede usar el repaso abierto para ganar autonomía. |
+| **Elena** | No seleccionó | Asistencia $100\ \%$; corrige errores prácticos en clase presencial y repasos. |
+| **Hugo** | No seleccionó | Buen nivel de asistencia; puede apoyarse en las sesiones abiertas. |
+| **Felipe** | No seleccionó | Desempeño alto ($4,3$); no está en riesgo de deserción. |
+
+COMPARACIÓN
+Los cambios fueron enfocarse en la urgencia, riesgo de deserción y aprovechamiento de recursos específicos, se enfoca en dar prioridad a quienes estan en mas riesgo de abandonar y necesitan horarios flexibles para mejorar su desempeño
+
+CONCLUSIÓN
+Los que necesitábamos definir  para que la IA pudiera hacer una selección acorde con el propósito del programa es primero dar los datos que se tienen, luego  se evalúan los casos de cada estudiante  teniendo en cuenta sus promedios de nota, su nivel de asistencia, sus situaciones particulares y se revisa cuales necesitan una intervención mas urgente no solo basado en sus notas o en sus problemas de aprendizaje sino tambien se tienen en cuenta si sus faltas se deben a situaciones personales que les impiden estar presentes el tiempo correspondiente lo cual puede provocar riesgo de deserción algo que se buscaria evitar, asi destinamos nuestros recursos en retener a los estudiantes que mas ayuda necesitan y se les apoya en sus complicaciones, la IA tiene cierto margen de diferencia con respecto a el criterio personal pero se puede llegar a cierto consenso en cuanto a ayudar a los estudiantes 
