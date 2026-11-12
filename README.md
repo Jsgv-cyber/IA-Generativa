@@ -12,4 +12,8 @@ contrastarla con lo que uno piensa.
 
 3. IA, ML, Aprendizaje Profundo e IA Generativa: Como un agregado adicional aqui ahi un mapa conceptual de una de las primeras actividades de IA generativa, en el mismo se muestran las diferencias entre tipos de inteligencias artificiales ya sean del tipo generativa, de pensamiento profundo o de learning machine tambien compara casos de uso cotidianos y sus utilidades.
 
+4. Pagina IA Riwi time: Nuestro trabajo en grupo consistia en crear una aplicación que ayudara a los coders de Riwi con la gestion de su tiempo, tareas y que les diera consejos de estudio asi como
+llevara registro de sus llegadas al establecimiento, para ello hicimos encuestas y nos acesoramos con personal de Riwi para tener una vision mas amplia de las necesidades y oportunidades que pueden
+haber en el sitio y asi crear de mejor manera la aplicacion, se incluye el tanto el link de la pagina como los prompts utilizados para su creacion.
+
 
