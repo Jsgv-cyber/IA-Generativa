@@ -10,7 +10,6 @@ de la misma, ya sean aplicaciones, problemas resueltos y estudios de la misma.
  utiliza la IA pues no solo se trata de utilizar la herramienta sino de tener el criterio y el discernimiento para ver las respuestas de la IA y analizar que tan acertada es su respuesta y
 contrastarla con lo que uno piensa.
 
-3. IA, ML, Aprendizaje Profundo e IA Generativa: Como un agregado adicional aqui ahi un mapa conceptual de una de las primeras actividades de IA generativa, en el mismo se muestran las diferencias
-4. entre tipos de inteligencias artificiales ya sean del tipo generativa, de pensamiento profundo o de learning machine.
+3. IA, ML, Aprendizaje Profundo e IA Generativa: Como un agregado adicional aqui ahi un mapa conceptual de una de las primeras actividades de IA generativa, en el mismo se muestran las diferencias entre tipos de inteligencias artificiales ya sean del tipo generativa, de pensamiento profundo o de learning machine tambien compara casos de uso cotidianos y sus utilidades.
 
 
