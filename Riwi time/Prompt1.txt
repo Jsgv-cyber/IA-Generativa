@@ -1,0 +1,17 @@
+Asume el rol de creador de aplicativo móvil, específicamente de gestión del tiempo. Crea un prompt para una aplicación de celular.
+
+**Objetivo de la aplicación:** ofrece acompañamiento para una oportuna gestión del tiempo a los coders que se encuentran en la fase de entrenamiento de RIWI.
+
+**El problema:** para los coders, el entrenamiento en RIWI exige demasiada atención de una oportuna gestión del tiempo que les permita tener una buena asistencia y cumplir con las múltiples y constantes actividades de su entrenamiento.
+
+**Funcionamiento:** permite ser un gestor de horarios (permite visualizar el horario).
+
+Gestor de materias y contenido, gestor de actividades diarias y entregables o tareas (to-do list), ofrece técnicas de gestión del tiempo, permite enlazar con otros aplicativos de gestión del tiempo, genera indicadores de asistencia, genera indicadores de cumplimiento de actividades, genera notificaciones de actividades próximas a entregar, tiene su propio asistente de IA que le permite hacer consultas rápidas y fáciles. El asistente de IA permite comandos de voz.
+
+**Con esta paleta de colores:**
+
+["ffffff", "5acca4", "8c80ff", "181e4b", "6b5cff"]
+
+Adapta el prompt para desplegarlo en el aplicativo Lovable.
+
+Antes de desplegar el prompt, realiza preguntas que nos permitan ajustar el aplicativo móvil conforme a su objetivo. No generes funciones adicionales que no estén alineadas al objetivo de la aplicación.

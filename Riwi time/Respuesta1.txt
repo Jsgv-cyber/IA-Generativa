@@ -1,0 +1,246 @@
+¡Perfecto\! Asumiré el rol de **Product Designer, especialista en UX/UI y creador de aplicaciones móviles enfocadas en productividad y gestión del tiempo**.
+
+Antes de construir el prompt definitivo para Lovable, vamos a definir algunos aspectos funcionales y visuales. El objetivo es crear una aplicación que responda a las necesidades reales de los coders en entrenamiento de RIWI, sin incorporar funcionalidades innecesarias que desvíen su propósito.
+
+Mi propuesta es construir una aplicación que funcione como un **centro de control del entrenamiento**, donde cada coder pueda organizar su tiempo, controlar sus compromisos académicos y recibir acompañamiento para cumplir sus objetivos.
+
+# 1\. Definición del aplicativo
+
+**Objetivo principal:**
+
+Desarrollar una aplicación móvil de gestión del tiempo que acompañe a los coders durante su proceso de entrenamiento en RIWI, facilitando la organización de horarios, materias, actividades, entregables y asistencia mediante herramientas de productividad y un asistente de inteligencia artificial.
+
+**Problema que resuelve:**
+
+La intensidad del entrenamiento exige que los coders administren adecuadamente su tiempo para:
+
+- Cumplir con los horarios establecidos.
+- Mantener una buena asistencia.
+- Organizar las materias y contenidos.
+- Gestionar múltiples actividades simultáneamente.
+- Cumplir oportunamente con los entregables.
+- Evitar olvidos y retrasos.
+
+# 2\. Preguntas para definir el aplicativo
+
+Necesito que respondas las siguientes preguntas. Con ellas podré construir un prompt mucho más preciso para Lovable.
+
+## A. Usuarios y acceso
+
+**1\. ¿Quiénes utilizarán la aplicación?**
+
+- A. Exclusivamente coders de RIWI.
+- B. Coders y trainers.
+- C. Coders, trainers y coordinadores.
+
+**2\. ¿Cómo quieres que los usuarios ingresen?**
+
+- A. Registro con correo y contraseña.
+- B. Inicio de sesión con Google.
+- C. Registro con correo institucional de RIWI.
+- D. Acceso sin registro.
+
+**3\. ¿La aplicación será individual o permitirá compartir información?**
+
+- A. Cada coder administra exclusivamente su información.
+- B. Los coders pueden compartir horarios y actividades.
+- C. Los trainers pueden consultar los indicadores de sus coders.
+
+## B. Gestor de horarios
+
+**4\. ¿Cómo se deben cargar los horarios de entrenamiento?**
+
+- A. Manualmente, cada coder registra sus horarios.
+- B. Mediante una plantilla de horario previamente establecida por RIWI.
+- C. Importando un archivo Excel o PDF.
+- D. Combinando las opciones anteriores.
+
+**5\. ¿Cómo quieres visualizar el horario?**
+
+- A. Vista semanal (lunes a viernes).
+- B. Vista diaria.
+- C. Vista mensual.
+- D. Todas las anteriores.
+
+**6\. ¿El horario debe permitir identificar las materias y sus respectivos bloques de entrenamiento mediante colores?**
+
+- Sí.
+- No.
+
+## C. Gestor de materias y actividades
+
+**7\. ¿Cómo quieres organizar las materias y contenidos?**
+
+- A. Materia → Módulo → Temas.
+- B. Materia → Contenidos → Actividades.
+- C. Materia → Módulos → Contenidos → Actividades.
+
+**8\. ¿Qué información debe tener cada actividad o entregable?**
+
+Mi recomendación es incluir:
+
+- Nombre de la actividad.
+- Descripción.
+- Materia relacionada.
+- Fecha y hora de entrega.
+- Nivel de prioridad.
+- Tiempo estimado de realización.
+- Estado: pendiente, en progreso y completada.
+
+¿Estás de acuerdo con esta estructura?
+
+**9\. ¿Quieres que las actividades se visualicen en diferentes formatos?**
+
+- A. Lista de tareas (To Do List).
+- B. Calendario.
+- C. Tablero Kanban (pendiente, en progreso y completado).
+- D. Todas las anteriores.
+
+## D. Asistencia e indicadores
+
+**10\. ¿Cómo debe registrar la aplicación la asistencia?**
+
+- A. El coder registra manualmente su asistencia.
+- B. El coder marca su ingreso y salida mediante un botón.
+- C. Se importa la información de asistencia desde un sistema externo.
+- D. Se combina el registro manual con la posibilidad de integración futura.
+
+**11\. ¿Qué indicadores quieres visualizar en el dashboard principal?**
+
+Te propongo los siguientes:
+
+| Indicador | Descripción |
+| --- | --- |
+| Asistencia | Porcentaje de asistencia acumulada. |
+| Puntualidad | Registro de llegadas a tiempo. |
+| Cumplimiento | Porcentaje de actividades completadas. |
+| Actividades pendientes | Cantidad de tareas sin finalizar. |
+| Entregas próximas | Actividades próximas a vencer. |
+| Productividad | Relación entre actividades planificadas y completadas. |
+
+¿Quieres todos estos indicadores o modificarías alguno?
+
+## E. Asistente de inteligencia artificial
+
+**12\. ¿Qué funciones debe cumplir el asistente de IA?**
+
+Te propongo que pueda:
+
+- Responder consultas sobre organización del tiempo.
+- Ayudar a priorizar actividades.
+- Recomendar cómo distribuir las horas disponibles.
+- Sugerir técnicas de productividad.
+- Consultar actividades pendientes.
+- Informar sobre próximas entregas.
+- Ayudar a reorganizar el día cuando el coder tiene demasiadas actividades.
+
+¿Estás de acuerdo con todas?
+
+**13\. ¿Cómo quieres interactuar con el asistente?**
+
+- A. Chat de texto.
+- B. Comandos de voz.
+- C. Texto y voz.
+
+**14\. ¿Quieres que el asistente tenga personalidad propia?**
+
+Por ejemplo: un entrenador personal de productividad que acompañe al coder, le recuerde sus compromisos y le ayude a mantener una buena organización.
+
+- Sí.
+- No.
+
+## F. Técnicas de gestión del tiempo
+
+**15\. ¿Qué técnicas quieres incorporar?**
+
+Te recomiendo comenzar con estas cuatro:
+
+- **Pomodoro:** sesiones de concentración con descansos programados.
+- **Time Blocking:** asignación de bloques de tiempo a cada actividad.
+- **Matriz Eisenhower:** clasificación de tareas según importancia y urgencia.
+- **Regla de los 2 minutos:** identificación de actividades rápidas que pueden resolverse inmediatamente.
+
+¿Quieres incorporar estas cuatro técnicas?
+
+## G. Notificaciones e integraciones
+
+**16\. ¿Qué notificaciones debe generar la aplicación?**
+
+- A. Recordatorios de clases próximas.
+- B. Recordatorios de actividades pendientes.
+- C. Alertas de entregas próximas a vencer.
+- D. Recordatorios de actividades atrasadas.
+- E. Recordatorios de pausas y sesiones de concentración.
+
+**17\. ¿Con cuáles aplicaciones externas te gustaría permitir integraciones?**
+
+- Google Calendar.
+- Google Tasks.
+- Microsoft Outlook Calendar.
+- Trello.
+- Notion.
+
+Puedes seleccionar varias.
+
+---
+
+# 3\. Identidad visual y experiencia de usuario
+
+Para el diseño utilizaré exclusivamente la paleta de colores que proporcionaste como base de identidad visual.
+
+| Color | Código HEX | Aplicación |
+| --- | --- | --- |
+| Blanco | `#FFFFFF` | Fondos y superficies. |
+| Verde menta | `#5ACCA4` | Actividades completadas y estados positivos. |
+| Lavanda | `#8C80FF` | Elementos destacados y categorías. |
+| Azul oscuro | `#181E4B` | Textos principales, navegación y encabezados. |
+| Violeta | `#6B5CFF` | Botones principales y acciones interactivas. |
+
+### Propuesta de navegación principal
+
+Sugiero una barra de navegación inferior con cinco secciones:
+
+1. **Inicio:** dashboard con resumen del día e indicadores.
+2. **Horario:** visualización y organización del entrenamiento.
+3. **Actividades:** materias, tareas y entregables.
+4. **Productividad:** técnicas de gestión del tiempo.
+5. **Asistente IA:** chat y comandos de voz.
+
+El asistente también podría tener un acceso flotante para consultas rápidas.
+
+### Estilo visual propuesto
+
+- Diseño moderno, minimalista y tecnológico.
+- Interfaz intuitiva, con pocos pasos para completar acciones.
+- Tarjetas visuales para indicadores.
+- Calendario interactivo.
+- Gráficos sencillos de cumplimiento y asistencia.
+- Diseño responsive, priorizando la experiencia móvil.
+- Microinteracciones y estados visuales claros.
+
+---
+
+# 4\. ¿Qué entregaré después de tus respuestas?
+
+Con tus respuestas construiré un **PROMPT MAESTRO PARA LOVABLE**, estructurado profesionalmente para que la herramienta pueda interpretar y desarrollar el aplicativo.
+
+El prompt contendrá:
+
+1. Contexto y propósito del proyecto.
+2. Problema que debe resolver.
+3. Público objetivo.
+4. Arquitectura de navegación.
+5. Descripción funcional de cada módulo.
+6. Diseño UX/UI y sistema visual.
+7. Modelo de datos y relaciones.
+8. Reglas de funcionamiento.
+9. Comportamiento del asistente de IA.
+10. Sistema de notificaciones.
+11. Indicadores y métricas.
+12. Requerimientos técnicos para su implementación.
+
+**Una consideración importante:** separaré las funcionalidades que Lovable puede representar inicialmente en una interfaz funcional de aquellas que requieren servicios externos, como la IA conversacional, los comandos de voz, las notificaciones push y las integraciones con calendarios.
+
+Así evitaremos que el resultado sea solamente un prototipo visual sin funcionalidad real.
+
+**Mi recomendación:** responder primero las 17 preguntas. Con esto podremos definir el alcance exacto del producto y evitar desarrollar funciones que no aporten directamente a la gestión del tiempo de los coders de RIWI.

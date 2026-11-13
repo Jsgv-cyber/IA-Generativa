@@ -1,0 +1,159 @@
+¿Quiénes utilizarán la aplicación?
+    A. Exclusivamente coders de RIWI.
+
+2. ¿Cómo quieres que los usuarios ingresen?.
+    B. Inicio de sesión con Google.
+
+
+3. ¿La aplicación será individual o permitirá compartir información?
+    A. Cada coder administra exclusivamente su información.
+
+B. Gestor de horarios
+
+4. ¿Cómo se deben cargar los horarios de entrenamiento?
+
+ 
+    C. Importando un archivo Excel o PDF o cualquier archivo de imagen
+  
+
+5. ¿Cómo quieres visualizar el horario?
+    D. Todas las anteriores.
+
+6. ¿El horario debe permitir identificar las materias y sus respectivos bloques de entrenamiento mediante colores?
+
+    Sí.
+
+
+C. Gestor de materias y actividades
+
+7. ¿Cómo quieres organizar las materias y contenidos?
+    C. Materia → Módulos → Contenidos → Actividades.
+
+8. ¿Qué información debe tener cada actividad o entregable?
+
+Mi recomendación es incluir:
+
+    Nombre de la actividad.
+    Descripción.
+    Materia relacionada.
+    Fecha y hora de entrega.
+    Nivel de prioridad.
+    Estado: pendiente, en progreso y completada.
+
+¿Estás de acuerdo con esta estructura?
+Sí, pero sin este item:  Tiempo estimado de realización.
+
+9. ¿Quieres que las actividades se visualicen en diferentes formatos?
+    C. Tablero Kanban (pendiente, en progreso y completado).
+  
+
+D. Asistencia e indicadores
+
+10. ¿Cómo debe registrar la aplicación la asistencia?
+ B. El coder marca su ingreso mediante un botón.
+
+11. ¿Qué indicadores quieres visualizar en el dashboard principal?
+
+Te propongo los siguientes:
+Indicador	Descripción
+Asistencia	Porcentaje de asistencia acumulada.
+Puntualidad	Registro de llegadas a tiempo.
+Cumplimiento	Porcentaje de actividades completadas.
+Actividades pendientes	Cantidad de tareas sin finalizar.
+Entregas próximas	Actividades próximas a vencer.
+Productividad	Relación entre actividades planificadas y completadas.
+
+Perfecto.
+
+E. Asistente de inteligencia artificial
+
+12. ¿Qué funciones debe cumplir el asistente de IA?
+
+Te propongo que pueda:
+
+    Responder consultas sobre organización del tiempo.
+    Ayudar a priorizar actividades.
+    Recomendar cómo distribuir las horas disponibles.
+    Sugerir técnicas de productividad.
+    Consultar actividades pendientes.
+    Informar sobre próximas entregas.
+    Ayudar a reorganizar el día cuando el coder tiene demasiadas actividades.
+
+¿Estás de acuerdo con todas? Sí
+
+13. ¿Cómo quieres interactuar con el asistente?
+    C. Texto y voz.
+
+14. ¿Quieres que el asistente tenga personalidad propia?
+
+Por ejemplo: un entrenador personal de productividad que acompañe al coder, le recuerde sus compromisos y le ayude a mantener una buena organización.
+
+    Sí.
+
+
+F. Técnicas de gestión del tiempo
+
+15. ¿Qué técnicas quieres incorporar?
+
+Te recomiendo comenzar con estas cuatro:
+
+    Pomodoro: sesiones de concentración con descansos programados.
+    Time Blocking: asignación de bloques de tiempo a cada actividad.
+    Matriz Eisenhower: clasificación de tareas según importancia y urgencia.
+    Regla de los 2 minutos: identificación de actividades rápidas que pueden resolverse inmediatamente.
+
+¿Quieres incorporar estas cuatro técnicas?Sí
+
+G. Notificaciones e integraciones
+
+16. ¿Qué notificaciones debe generar la aplicación?
+    C. Alertas de entregas próximas a vencer.
+    D. Recordatorios de actividades atrasadas.
+
+17. ¿Con cuáles aplicaciones externas te gustaría permitir integraciones?
+
+    Google Calendar.
+    Google Tasks.
+    Microsoft Outlook Calendar.
+    Trello.
+    Notion.
+
+Propuesta de navegación principal
+
+Sugiero una barra de navegación inferior con cinco secciones:
+
+    Inicio: dashboard con resumen del día e indicadores.
+    Horario: visualización y organización del entrenamiento.
+    Actividades: materias, tareas y entregables.
+    Productividad: técnicas de gestión del tiempo.
+    Asistente IA: chat y comandos de voz.
+
+El asistente también podría tener un acceso flotante para consultas rápidas.
+Estilo visual propuesto
+
+    Diseño moderno, minimalista y tecnológico.
+    Interfaz intuitiva, con pocos pasos para completar acciones.
+    Tarjetas visuales para indicadores.
+    Calendario interactivo.
+    Gráficos sencillos de cumplimiento y asistencia.
+    Diseño responsive, priorizando la experiencia móvil.
+    Microinteracciones y estados visuales claros.
+
+4. ¿Qué entregaré después de tus respuestas?
+
+Con tus respuestas construiré un PROMPT MAESTRO PARA LOVABLE, estructurado profesionalmente para que la herramienta pueda interpretar y desarrollar el aplicativo.
+
+El prompt contendrá:
+
+    Contexto y propósito del proyecto.
+    Problema que debe resolver.
+    Público objetivo.
+    Arquitectura de navegación.
+    Descripción funcional de cada módulo.
+    Diseño UX/UI y sistema visual.
+    Modelo de datos y relaciones.
+    Reglas de funcionamiento.
+    Comportamiento del asistente de IA.
+    Sistema de notificaciones.
+    Indicadores y métricas.
+    Requerimientos técnicos para su implementación.

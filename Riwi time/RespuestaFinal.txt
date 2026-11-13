@@ -1,0 +1,844 @@
+PROYECTO: RIWI TIME
+Aplicación inteligente de gestión del tiempo para coders de RIWI
+
+Asume el rol de un equipo interdisciplinario compuesto por:
+
+Product Manager especializado en aplicaciones de productividad.
+Diseñador UX/UI especializado en aplicaciones móviles.
+Desarrollador Full Stack.
+Arquitecto de software.
+Especialista en inteligencia artificial aplicada a productividad.
+
+Tu misión es diseñar y desarrollar una aplicación móvil llamada RIWI TIME, especializada en acompañar a los coders durante su fase de entrenamiento en RIWI, ayudándoles a administrar eficientemente su tiempo, organizar sus responsabilidades académicas, controlar su asistencia y cumplir oportunamente con sus actividades y entregables.
+
+IMPORTANTE: No desarrolles una aplicación genérica de productividad. Construye una solución especializada en las necesidades del entrenamiento de los coders de RIWI.
+
+1. CONTEXTO Y PROBLEMA
+
+El entrenamiento en RIWI exige a los coders mantener un alto nivel de atención, disciplina y organización.
+
+Durante su formación deben cumplir horarios de entrenamiento, asistir puntualmente, desarrollar diferentes actividades, avanzar en múltiples materias, completar módulos de aprendizaje y entregar proyectos dentro de fechas establecidas.
+
+La cantidad y simultaneidad de estas responsabilidades pueden dificultar la administración del tiempo.
+
+RIWI TIME nace para solucionar esta problemática mediante una plataforma centralizada que permita visualizar, organizar, priorizar y controlar todas las responsabilidades del entrenamiento.
+
+2. OBJETIVO GENERAL
+
+Desarrollar una aplicación móvil inteligente que acompañe a los coders de RIWI en la gestión oportuna de su tiempo, facilitando la organización de horarios, materias, contenidos, actividades, entregables y asistencia, mediante indicadores de desempeño, técnicas de productividad y un asistente de inteligencia artificial.
+
+3. PÚBLICO OBJETIVO
+
+Usuarios exclusivos: coders que se encuentran en la fase de entrenamiento de RIWI.
+
+Características:
+
+Manejan diferentes materias y contenidos.
+Tienen horarios de entrenamiento establecidos.
+Desarrollan múltiples actividades simultáneamente.
+Deben cumplir fechas de entrega.
+Necesitan mantener una buena asistencia y puntualidad.
+Requieren herramientas para priorizar y organizar su tiempo.
+
+La aplicación será individual.
+
+Cada coder tendrá una cuenta privada y administrará exclusivamente su propia información.
+
+No desarrollar funcionalidades de administración institucional, supervisión de trainers ni visualización de información de otros coders.
+
+4. IDENTIDAD VISUAL Y DISEÑO UX/UI
+
+Construye una interfaz moderna, tecnológica, minimalista y profesional.
+
+La experiencia debe estar diseñada principalmente para dispositivos móviles.
+
+Paleta de colores obligatoria
+
+Utiliza exclusivamente la siguiente paleta como identidad cromática principal:
+
+Blanco: #FFFFFF
+Verde menta: #5ACCA4
+Lavanda: #8C80FF
+Azul oscuro: #181E4B
+Violeta: #6B5CFF
+Aplicación de colores
+#FFFFFF: fondos principales, tarjetas y superficies.
+#5ACCA4: actividades completadas, asistencia positiva y estados satisfactorios.
+#8C80FF: categorías, materias y elementos secundarios.
+#181E4B: títulos, textos principales y navegación.
+#6B5CFF: botones principales, acciones y elementos destacados.
+
+Mantén una jerarquía visual clara y suficiente contraste.
+
+Lineamientos de diseño
+Diseño mobile-first.
+Interfaz limpia y minimalista.
+Tarjetas con bordes suavizados.
+Esquinas redondeadas.
+Sombras sutiles.
+Iconografía moderna y consistente.
+Gráficos sencillos y comprensibles.
+Microinteracciones en botones y cambios de estado.
+Tipografía moderna y altamente legible.
+Formularios intuitivos.
+Estados vacíos que orienten al usuario.
+Mensajes de confirmación para acciones importantes.
+
+Evita interfaces saturadas, exceso de información y elementos decorativos innecesarios.
+
+5. ARQUITECTURA DE NAVEGACIÓN
+
+Implementa una navegación inferior fija con cinco módulos principales:
+
+Inicio.
+Horario.
+Actividades.
+Productividad.
+Asistente IA.
+
+Cada sección debe contar con una interfaz independiente, navegación funcional y estados de interacción.
+
+El asistente de IA también tendrá un botón flotante de acceso rápido.
+
+6. MÓDULO DE AUTENTICACIÓN
+
+Implementa un sistema de autenticación mediante Google.
+
+Características:
+
+Inicio de sesión con Google OAuth.
+Registro automático del usuario en su primer ingreso.
+Persistencia de sesión.
+Cierre de sesión.
+Protección de rutas privadas.
+Cada usuario debe acceder exclusivamente a sus propios datos.
+
+Utiliza Supabase Auth o una solución compatible con Lovable.
+
+No utilizar información simulada como mecanismo permanente de autenticación.
+
+7. MÓDULO DE INICIO: DASHBOARD
+
+Construye un dashboard que funcione como centro de control del entrenamiento.
+
+El usuario debe identificar rápidamente cómo está administrando su tiempo y cuáles son sus compromisos actuales.
+
+Componentes del dashboard
+A. Saludo personalizado
+
+Mostrar:
+
+Nombre del coder.
+Fecha actual.
+Mensaje breve de acompañamiento.
+Resumen de su jornada.
+B. Indicadores principales
+
+Implementar seis indicadores:
+
+1. Asistencia
+
+Porcentaje de asistencia acumulada.
+Sesiones asistidas.
+Sesiones programadas.
+Evolución de asistencia.
+
+2. Puntualidad
+
+Cantidad de ingresos puntuales.
+Cantidad de ingresos tardíos.
+Porcentaje de puntualidad.
+
+3. Cumplimiento
+
+Porcentaje de actividades completadas.
+Actividades completadas.
+Actividades pendientes.
+
+4. Actividades pendientes
+
+Total de actividades sin completar.
+Actividades atrasadas.
+Actividades en progreso.
+
+5. Entregas próximas
+
+Próximas fechas de entrega.
+Nombre de la actividad.
+Materia relacionada.
+Prioridad.
+
+6. Productividad
+
+Relación entre actividades planificadas y actividades completadas durante un período.
+Evolución del cumplimiento.
+
+Los indicadores deben calcularse con información real almacenada en la base de datos.
+
+No utilizar porcentajes aleatorios ni cifras estáticas.
+
+C. Resumen del día
+
+Mostrar:
+
+Clases programadas.
+Materias del día.
+Actividades pendientes.
+Próximos entregables.
+Registro de asistencia.
+D. Accesos rápidos
+
+Incluir botones para:
+
+Registrar asistencia.
+Crear actividad.
+Consultar horario.
+Consultar asistente IA.
+8. MÓDULO DE GESTIÓN DE HORARIOS
+
+Este módulo permitirá administrar y visualizar el horario de entrenamiento.
+
+A. Importación de horarios
+
+Implementar una funcionalidad para importar horarios desde:
+
+Archivos Excel (.xlsx y .xls).
+Archivos PDF.
+Imágenes (.png, .jpg y .jpeg).
+
+El sistema debe poder extraer la información del horario mediante procesamiento de documentos y reconocimiento de texto cuando sea necesario.
+
+Identificar, cuando estén disponibles:
+
+Nombre de la materia.
+Fecha.
+Día de la semana.
+Hora de inicio.
+Hora de finalización.
+Nombre del módulo o actividad.
+Bloque de entrenamiento.
+
+Después de procesar el archivo, mostrar una pantalla de revisión para que el coder pueda verificar, corregir y confirmar la información antes de guardarla.
+
+No guardar automáticamente datos extraídos que no hayan sido confirmados por el usuario.
+
+B. Visualización del horario
+
+Implementar tres formatos:
+
+Vista diaria:
+
+Línea de tiempo.
+Bloques de entrenamiento.
+Hora de inicio y finalización.
+Identificación de materias.
+
+Vista semanal:
+
+Distribución de lunes a domingo.
+Bloques organizados por día.
+Diferenciación cromática de materias.
+
+Vista mensual:
+
+Calendario mensual.
+Identificación de días con actividades.
+Acceso al detalle de cada jornada.
+C. Gestión de horarios
+
+Permitir:
+
+Crear bloques manualmente.
+Editar bloques.
+Eliminar bloques.
+Consultar detalles.
+Identificar materias mediante colores.
+
+Los colores deben mantenerse consistentes para cada materia.
+
+El horario debe permitir reconocer visualmente las actividades del entrenamiento.
+
+9. MÓDULO DE MATERIAS Y ACTIVIDADES
+
+Este módulo centraliza la organización académica.
+
+A. Estructura jerárquica
+
+Implementar la siguiente organización:
+
+MATERIA → MÓDULO → CONTENIDO → ACTIVIDADES.
+
+Ejemplo:
+
+Materia: Desarrollo Web.
+
+Módulo: JavaScript.
+
+Contenido: Funciones y estructuras de datos.
+
+Actividades:
+
+Ejercicio práctico.
+Taller de aplicación.
+Entregable del módulo.
+
+Cada nivel debe permitir consultar y administrar sus elementos relacionados.
+
+B. Gestión de materias
+
+Permitir:
+
+Crear materias.
+Editar materias.
+Asignar colores.
+Consultar módulos.
+Consultar contenidos.
+Visualizar actividades asociadas.
+C. Gestión de módulos y contenidos
+
+Permitir crear, editar, consultar y eliminar módulos y contenidos.
+
+Mantener la relación jerárquica entre los elementos.
+
+D. Gestión de actividades
+
+Cada actividad debe tener los siguientes campos:
+
+Nombre de la actividad.
+Descripción.
+Materia relacionada.
+Módulo relacionado.
+Contenido relacionado.
+Fecha de creación.
+Fecha y hora de entrega.
+Nivel de prioridad.
+Estado.
+
+Los niveles de prioridad serán:
+
+Alta.
+Media.
+Baja.
+
+Los estados serán:
+
+Pendiente.
+En progreso.
+Completada.
+
+No incluir el campo de tiempo estimado de realización.
+
+E. Tablero Kanban
+
+La visualización principal de las actividades debe realizarse mediante un tablero Kanban.
+
+Implementar tres columnas:
+
+Pendiente.
+En progreso.
+Completada.
+
+Permitir mover las actividades entre columnas.
+
+Actualizar automáticamente el estado de la actividad cuando se mueva.
+
+Cada tarjeta debe mostrar:
+
+Nombre.
+Materia.
+Fecha de entrega.
+Prioridad.
+Estado.
+
+Incluir filtros por materia, prioridad y fecha de entrega.
+
+Permitir crear, editar y eliminar actividades.
+
+10. MÓDULO DE ASISTENCIA
+
+Implementar un sistema de registro de ingreso al entrenamiento.
+
+Funcionamiento
+
+El coder tendrá un botón visible denominado:
+
+REGISTRAR MI ASISTENCIA.
+
+Al presionarlo:
+
+Registrar automáticamente la fecha.
+Registrar la hora exacta del ingreso.
+Relacionar el registro con la sesión programada correspondiente.
+Guardar el registro en la base de datos.
+Mostrar una confirmación visual.
+
+Evitar registros duplicados para una misma sesión.
+
+Control de puntualidad
+
+Comparar la hora de registro con la hora de inicio de la sesión programada.
+
+Si registra antes o a la hora de inicio: puntual.
+Si registra después de la hora de inicio: tardío.
+
+No inventar períodos de tolerancia.
+
+Historial de asistencia
+
+Mostrar:
+
+Fecha.
+Materia o sesión.
+Hora programada.
+Hora registrada.
+Estado: puntual o tardío.
+
+Las sesiones finalizadas sin registro deben contabilizarse como inasistencia, siempre que exista un horario confirmado.
+
+Indicadores
+
+Calcular:
+
+Porcentaje de asistencia:
+
+(Sesiones asistidas / Sesiones programadas) × 100.
+
+Porcentaje de puntualidad:
+
+(Sesiones puntuales / Sesiones asistidas) × 100.
+
+No implementar geolocalización ni seguimiento de ubicación.
+
+11. MÓDULO DE PRODUCTIVIDAD
+
+Este módulo contendrá exclusivamente herramientas y técnicas para mejorar la administración del tiempo.
+
+Implementar cuatro técnicas:
+
+A. Técnica Pomodoro
+
+Desarrollar un temporizador configurable que permita:
+
+Iniciar sesión de concentración.
+Pausar.
+Reanudar.
+Finalizar.
+Activar descansos.
+Configurar duración de concentración.
+Configurar duración de descanso.
+
+Mostrar visualmente el progreso del temporizador.
+
+Utilizar una interfaz sencilla y enfocada en la concentración.
+
+B. Time Blocking
+
+Permitir organizar actividades mediante bloques de tiempo.
+
+El usuario podrá:
+
+Seleccionar una actividad.
+Asignar fecha.
+Definir hora de inicio.
+Definir hora de finalización.
+Visualizar los bloques en el calendario.
+
+Relacionar los bloques con las actividades existentes.
+
+C. Matriz Eisenhower
+
+Construir una matriz visual de cuatro cuadrantes:
+
+Urgente e importante: hacer inmediatamente.
+Importante y no urgente: programar.
+Urgente y no importante: gestionar.
+No urgente y no importante: reconsiderar.
+
+Permitir clasificar las actividades existentes en los cuadrantes.
+
+D. Regla de los 2 minutos
+
+Crear una sección explicativa que enseñe la técnica y permita identificar actividades sencillas que puedan resolverse rápidamente.
+
+El usuario podrá clasificar sus actividades según esta técnica.
+
+Todas las herramientas deben tener una interfaz funcional y estar relacionadas con las actividades del usuario.
+
+12. ASISTENTE DE INTELIGENCIA ARTIFICIAL
+
+Este módulo es uno de los elementos diferenciadores de RIWI TIME.
+
+Construye un asistente inteligente que funcione como entrenador personal de productividad para los coders.
+
+Su personalidad debe ser:
+
+Cercana.
+Motivadora.
+Profesional.
+Organizada.
+Práctica.
+Orientada al cumplimiento de objetivos.
+
+No debe ser un chatbot genérico.
+
+Debe conocer el contexto de organización del tiempo del usuario, utilizando exclusivamente los datos a los que ese usuario tiene acceso.
+
+A. Interfaz
+
+Crear una interfaz de conversación con:
+
+Mensajes del usuario.
+Respuestas del asistente.
+Campo de escritura.
+Botón de envío.
+Botón de micrófono.
+Indicador de procesamiento.
+Historial de conversaciones.
+B. Consultas que debe resolver
+
+El asistente debe poder responder preguntas como:
+
+¿Qué actividades tengo pendientes hoy?
+¿Qué entregas debo realizar esta semana?
+¿Cuál es mi próxima clase?
+¿Qué actividades debería priorizar?
+¿Cómo puedo organizar mi jornada?
+¿Qué técnica de productividad me recomiendas?
+¿Cómo puedo mejorar mi cumplimiento?
+¿Qué actividades tengo atrasadas?
+C. Capacidades inteligentes
+
+El asistente debe:
+
+Consultar las actividades pendientes del usuario.
+Consultar fechas de entrega.
+Consultar materias y contenidos.
+Consultar horarios.
+Identificar actividades atrasadas.
+Recomendar prioridades.
+Proponer una distribución del tiempo.
+Sugerir técnicas de productividad.
+Ayudar a reorganizar las actividades del día.
+
+Cuando recomiende una reorganización, debe explicar sus sugerencias y solicitar autorización antes de modificar horarios o actividades.
+
+No debe inventar actividades, horarios ni fechas.
+
+D. Interacción por voz
+
+Implementar comandos de voz.
+
+Permitir:
+
+Activar micrófono.
+Convertir voz a texto.
+Procesar la consulta.
+Mostrar la respuesta.
+Reproducir la respuesta mediante síntesis de voz.
+
+Utilizar las capacidades de reconocimiento y síntesis de voz disponibles en el navegador o integrar un servicio compatible.
+
+Solicitar permisos de micrófono cuando corresponda.
+
+E. Implementación de IA
+
+Integrar un proveedor de inteligencia artificial mediante una API segura.
+
+No exponer claves API en el frontend.
+
+El asistente debe consultar los datos del usuario mediante funciones backend seguras y respetar las políticas de acceso.
+
+No simular respuestas inteligentes mediante respuestas estáticas.
+
+13. SISTEMA DE NOTIFICACIONES
+
+Implementar únicamente dos categorías de notificaciones:
+
+A. Entregas próximas a vencer
+
+Enviar alertas cuando una actividad tenga una fecha de entrega cercana.
+
+Mostrar:
+
+Nombre de la actividad.
+Materia.
+Fecha y hora de entrega.
+Prioridad.
+B. Actividades atrasadas
+
+Notificar cuando una actividad no haya sido completada y su fecha de entrega haya vencido.
+
+Mostrar:
+
+Nombre.
+Materia.
+Fecha de vencimiento.
+Estado actual.
+
+Las notificaciones deben permitir acceder directamente a la actividad relacionada.
+
+Implementar notificaciones push cuando la plataforma y los permisos lo permitan.
+
+También mantener un centro de notificaciones dentro de la aplicación.
+
+No incorporar notificaciones de clases próximas, pausas ni recordatorios adicionales.
+
+14. INTEGRACIONES EXTERNAS
+
+Preparar la arquitectura para integrar:
+
+Google Calendar.
+Google Tasks.
+Microsoft Outlook Calendar.
+Trello.
+Notion.
+Objetivo de las integraciones
+
+Permitir que el coder conecte sus herramientas externas de organización para consultar y sincronizar información relacionada con sus horarios y actividades.
+
+Requerimientos
+Pantalla de integraciones.
+Identificación del servicio.
+Estado de conexión.
+Autorización mediante mecanismos seguros.
+Configuración de sincronización.
+Gestión de errores.
+Posibilidad de desconectar servicios.
+
+No mostrar integraciones como conectadas si no existe una conexión real.
+
+No simular sincronizaciones.
+
+Implementar cada integración mediante sus respectivas APIs oficiales y credenciales autorizadas.
+
+La arquitectura debe permitir definir el sentido de sincronización y evitar duplicación de eventos y actividades.
+
+15. MODELO DE DATOS
+
+Utilizar Supabase como backend principal.
+
+Diseñar una base de datos relacional que contemple las siguientes entidades:
+
+USERS
+id.
+nombre.
+correo.
+fecha de creación.
+SUBJECTS
+id.
+user_id.
+nombre.
+descripción.
+color.
+MODULES
+id.
+subject_id.
+nombre.
+descripción.
+CONTENTS
+id.
+module_id.
+nombre.
+descripción.
+ACTIVITIES
+id.
+user_id.
+subject_id.
+module_id.
+content_id.
+nombre.
+descripción.
+fecha_entrega.
+prioridad.
+estado.
+fecha_creación.
+SCHEDULES
+id.
+user_id.
+subject_id.
+nombre.
+fecha.
+hora_inicio.
+hora_fin.
+ATTENDANCE
+id.
+user_id.
+schedule_id.
+fecha.
+hora_registro.
+estado.
+TIME_BLOCKS
+id.
+user_id.
+activity_id.
+fecha.
+hora_inicio.
+hora_fin.
+NOTIFICATIONS
+id.
+user_id.
+activity_id.
+tipo.
+mensaje.
+fecha.
+estado_lectura.
+PRODUCTIVITY_SESSIONS
+id.
+user_id.
+activity_id.
+tipo.
+duración.
+fecha.
+estado.
+AI_CONVERSATIONS
+id.
+user_id.
+fecha_creación.
+AI_MESSAGES
+id.
+conversation_id.
+role.
+contenido.
+fecha.
+INTEGRATIONS
+id.
+user_id.
+proveedor.
+estado.
+configuración.
+
+Establecer correctamente las relaciones entre tablas.
+
+Utilizar UUID como identificadores.
+
+Configurar Row Level Security (RLS) para garantizar que cada usuario solamente pueda consultar y modificar sus propios datos.
+
+Las credenciales y tokens de integraciones deben almacenarse de forma segura.
+
+16. REQUERIMIENTOS TÉCNICOS
+
+Desarrollar utilizando:
+
+React.
+TypeScript.
+Tailwind CSS.
+Componentes reutilizables.
+Supabase como backend.
+Supabase Auth para autenticación.
+Supabase Database para persistencia.
+Supabase Storage para archivos importados.
+Funciones backend seguras para servicios externos.
+
+Diseñar la aplicación como una experiencia mobile-first, responsive y preparada para instalarse como PWA cuando sea viable.
+
+Utilizar componentes modulares y mantener una arquitectura escalable.
+
+Todos los formularios deben validar los datos.
+
+Todas las acciones principales deben tener estados de carga, confirmación y error.
+
+No dejar botones sin funcionalidad.
+
+No utilizar información ficticia como sustituto de funcionalidades que deben estar conectadas a la base de datos.
+
+17. REGLAS DE NEGOCIO
+
+Respetar las siguientes reglas:
+
+Cada coder administra su propia información.
+Los datos académicos pertenecen al usuario que los crea o importa.
+Las actividades deben estar relacionadas con su estructura académica cuando corresponda.
+El estado de una actividad debe actualizarse cuando se modifique en el tablero Kanban.
+La asistencia debe registrar la hora real del ingreso.
+La puntualidad se calcula comparando el ingreso con el inicio programado.
+Los indicadores deben calcularse a partir de datos reales.
+Las actividades atrasadas deben identificarse automáticamente.
+Las fechas y horarios deben interpretarse en la zona horaria local del usuario.
+El asistente de IA no debe realizar modificaciones sin autorización.
+Las integraciones deben contar con autorización del usuario.
+No duplicar registros de asistencia ni actividades durante las sincronizaciones.
+18. EXPERIENCIA DE USUARIO Y FLUJOS
+
+Diseñar cuidadosamente los siguientes recorridos:
+
+Flujo 1. Primer ingreso
+
+Google Login → Bienvenida → Configuración inicial → Importación del horario → Confirmación de materias → Dashboard.
+
+Flujo 2. Organización académica
+
+Actividades → Seleccionar materia → Seleccionar módulo → Seleccionar contenido → Crear actividad → Asignar fecha de entrega → Guardar.
+
+Flujo 3. Registro de asistencia
+
+Inicio → Registrar asistencia → Confirmación → Actualización de indicadores.
+
+Flujo 4. Gestión de actividades
+
+Actividades → Tablero Kanban → Seleccionar actividad → Modificar estado → Guardar.
+
+Flujo 5. Consulta al asistente
+
+Asistente IA → Escribir o hablar → Procesamiento → Respuesta contextualizada.
+
+Flujo 6. Productividad
+
+Productividad → Seleccionar técnica → Configurar → Ejecutar → Consultar resultado.
+
+19. CRITERIOS DE CALIDAD
+
+El resultado debe cumplir con estas condiciones:
+
+La aplicación debe ser visualmente atractiva y profesional.
+Debe funcionar correctamente en dispositivos móviles.
+La navegación debe ser intuitiva.
+Los módulos deben estar conectados entre sí.
+La información debe persistir.
+Los indicadores deben ser dinámicos.
+Los formularios deben funcionar.
+El tablero Kanban debe permitir gestionar actividades.
+La importación de horarios debe permitir revisar los datos extraídos.
+La asistencia debe registrar correctamente los ingresos.
+El asistente debe utilizar información contextual del usuario.
+Las notificaciones deben responder a fechas reales.
+Las integraciones deben contar con conexiones verificables.
+20. RESTRICCIONES DEL PROYECTO
+
+NO incorporar funcionalidades que no estén directamente relacionadas con el objetivo de RIWI TIME.
+
+No desarrollar:
+
+Redes sociales.
+Mensajería entre coders.
+Rankings o competencias.
+Gamificación.
+Tiendas o marketplaces.
+Gestión financiera.
+Gestión de hábitos independiente.
+Paneles administrativos institucionales.
+Sistemas de evaluación académica.
+Funciones de supervisión de trainers.
+
+La aplicación debe conservar su enfoque en la gestión del tiempo, la asistencia y el cumplimiento de las actividades del entrenamiento.
+
+21. INSTRUCCIÓN FINAL DE DESARROLLO
+
+Construye RIWI TIME como un producto digital funcional, no como una simple maqueta.
+
+Prioriza la calidad de la experiencia móvil, la facilidad de uso y la conexión entre los módulos.
+
+Comienza desarrollando la estructura general, el sistema visual, la navegación y la autenticación.
+
+Posteriormente implementa los módulos funcionales y conecta cada uno con Supabase.
+
+Desarrolla por componentes reutilizables y verifica cada flujo antes de avanzar.
+
+Si alguna funcionalidad requiere credenciales externas, APIs, permisos o servicios adicionales, prepara su arquitectura y presenta claramente los requisitos de configuración.
+
+No reemplaces funcionalidades complejas por botones decorativos o simulaciones.
+
+El resultado final debe transmitir la identidad de una herramienta tecnológica diseñada específicamente para que los coders de RIWI puedan organizar su entrenamiento, mejorar su asistencia y cumplir oportunamente con sus responsabilidades.
+
+Nombre del producto: RIWI TIME.
+
+Concepto de marca: Tu tiempo, tu entrenamiento, tu progreso.
